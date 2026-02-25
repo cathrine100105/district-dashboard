@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h2>Dashboard</h2>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+</div>
+
+ <!-- KPI SECTION  -->
+<div class="kpi-row">
+
+  <div class="kpi">
+    <p>🧑‍🏫Total Learners</p>
+    <h2>22,500</h2>
+  </div>
+
+  <div class="kpi">
+    <p>🤵🏻Male</p>
+    <h2>12,000</h2>
+  </div>
+
+  <div class="kpi">
+    <p>👩‍⚕️Female</p>
+    <h2>10,000</h2>
+  </div>
+
+  <div class="kpi">
+    <p>🧑‍🏫Active Learners</p>
+    <h2>9,312</h2>
+  </div>
+
+  <div class="kpi">
+    <p>🧑‍🎓Engaged Learners</p>
+    <h2>785</h2>
+  </div>
+
+</div>
+
+<!-- CHART SECTION -->
+<div class="chart-grid">
+
+  <div class="card">
+    <h3>Course Progress</h3>
+    <canvas id="courseChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Pass Percentage</h3>
+    <canvas id="passChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Assessment Completion</h3>
+    <canvas id="donutChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h3>Grade Breakdown</h3>
+    <canvas id="pieChart"></canvas>
+  </div>
+
+</div>
+
+<!-- DISTRICT RANKING -->
+<h3>District Ranking</h3>
+
+<div class="ranking">
+
+  <div class="rank-card">
+    <h4>Ariyalur</h4>
+    <p>1st Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Coimbatore</h4>
+    <p>2nd Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Erode</h4>
+    <p>3rd Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Kallakurichi</h4>
+    <p>4th Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Madurai</h4>
+    <p>5th Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Dharmapuri</h4>
+    <p>6th Rank</p>
+  </div>
+
+  <div class="rank-card">
+    <h4>Dindigul</h4>
+    <p>7th Rank</p>
+  </div>
+
+</div>
+
+<div class="ranking-card">
+  <div class="ranking-header">
+    <h2>District Ranking</h2>
+  </div>
+
+  <canvas id="rankingChart"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

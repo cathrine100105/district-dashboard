@@ -1,0 +1,80 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+  background: #f2f2f2;
+  color: black;
+}
+
+/* DARK MODE */
+.dark {
+  background: #111;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* KPI */
+.kpi-row {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.kpi {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  text-align: center;
+}
+
+.dark .kpi {
+  background: #222;
+}
+
+/* CHART GRID */
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.dark .card {
+  background: #222;
+}
+
+
+
+/* RANKING */
+.ranking {
+  display: flex;
+  flex-wrap: wrap;       
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* RANK CARD */
+.rank-card {
+  background: #444;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 160px;          
+  text-align: center;
+  flex: 0 0 auto;        
+}
+
+.dark .rank-card {
+  background: #333;
+}
